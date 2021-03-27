@@ -1,0 +1,9 @@
+{% load static %}
+{% if pic_list %}
+    {% for pic in pic_list %}
+        <img src="{{pic.image.url}}">
+        <h5>{{ pic.image_date }}</h5>
+    {% endfor %}
+{% else %}
+    <p>No pictures</p>
+{% endif %}
