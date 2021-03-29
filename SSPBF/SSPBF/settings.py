@@ -25,7 +25,7 @@ SECRET_KEY = 'd&z(#0^&h1x+&nnm0i#^m*dd#2ubwf%8mxgo2f2-c!+)9p=lmz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'www.birdfeeder.web.illinois.edu', 'birdfeeder.web.illinois.edu']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'www.bfeedertest.web.illinois.edu', 'bfeedertest.web.illinois.edu']
 
 
 # Application definition
@@ -98,8 +98,8 @@ WSGI_APPLICATION = 'SSPBF.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'birdfeeder_mysql',
-        'USER':'birdfeeder_xyt',
+        'NAME': 'bfeedertest_mysql',
+        'USER':'bfeedertest_xyt',
         'PASSWORD':'SSPBF_ece445',
         'HOST':'localhost',
         'PORT': '3306',
