@@ -25,7 +25,7 @@ SECRET_KEY = 'd&z(#0^&h1x+&nnm0i#^m*dd#2ubwf%8mxgo2f2-c!+)9p=lmz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'www.feeder.web.illinois.edu', 'feeder.web.illinois.edu']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'www.birdfeeder.web.illinois.edu', 'birdfeeder.web.illinois.edu']
 
 
 # Application definition
