@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'd&z(#0^&h1x+&nnm0i#^m*dd#2ubwf%8mxgo2f2-c!+)9p=lmz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -74,6 +74,7 @@ WSGI_APPLICATION = 'SSPBF.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# SQLite database
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -81,12 +82,25 @@ WSGI_APPLICATION = 'SSPBF.wsgi.application'
 #     }
 # }
 
+# local database
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'sspbf',
+#         'USER':'root',
+#         'PASSWORD':'',
+#         'HOST':'localhost',
+#         'PORT': '3306',
+#     }
+# }
+
+# cpanel database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sspbf',
-        'USER':'root',
-        'PASSWORD':'',
+        'NAME': 'yitianx2_SSPBF',
+        'USER':'yitianx2_yitianx2',
+        'PASSWORD':'SSPBF_ece445',
         'HOST':'localhost',
         'PORT': '3306',
     }
@@ -130,6 +144,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static')
+)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
