@@ -98,8 +98,8 @@ WSGI_APPLICATION = 'SSPBF.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'yitianx2_SSPBF',
-        'USER':'yitianx2_yitianx2',
+        'NAME': 'birdfeeder_mysql',
+        'USER':'birdfeeder_xyt',
         'PASSWORD':'SSPBF_ece445',
         'HOST':'localhost',
         'PORT': '3306',
