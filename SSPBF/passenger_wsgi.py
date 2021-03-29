@@ -1,0 +1,1 @@
+from SSPBF.wsgi import application
